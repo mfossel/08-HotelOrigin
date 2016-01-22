@@ -1,0 +1,21 @@
+﻿<Window x:Class="_08_HotelOrigin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="473.843" Width="408.582" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Closed="Window_Closed">
+    <Grid Background="White">
+        <RichTextBox HorizontalAlignment="Left" Height="113" Margin="10,10,0,0" VerticalAlignment="Top" Width="383">
+            <FlowDocument>
+                <Paragraph LineHeight="6" TextAlignment="Center">
+                    <Run FontWeight="Bold" Text="WELCOME TO"/>
+                </Paragraph>
+                <Paragraph LineHeight="6" TextAlignment="Center">
+                    <Run FontWeight="Bold" FontSize="48" FontFamily="Impact" Text="HOTEL ORIGIN" TextDecorations="Underline"/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="CustomerButton" Content="Customer Management" Margin="10,160,10,0" VerticalAlignment="Top" Height="58" FontWeight="Bold" FontSize="20" Click="CustomerButton_Click"/>
+        <Button x:Name="ReservationButton" Content="Reservation Mangement" Margin="10,254,10,0" VerticalAlignment="Top" Height="58" FontWeight="Bold" FontSize="20" Click="ReservationButton_Click"/>
+        <Button x:Name="RoomButton" Content="Room Mangement" Margin="10,342,10,0" VerticalAlignment="Top" Height="58" FontWeight="Bold" FontSize="20" Click="RoomButton_Click"/>
+        <Label Content="             © 2016" HorizontalAlignment="Left" Margin="269,405,0,3" Width="124"/>
+    </Grid>
+</Window>

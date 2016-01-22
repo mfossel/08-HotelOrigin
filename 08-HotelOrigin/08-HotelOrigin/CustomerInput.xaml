@@ -1,0 +1,24 @@
+﻿<Window x:Class="_08_HotelOrigin.CustomerInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Customers" Height="405" Width="315" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid HorizontalAlignment="Left" Width="294">
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="217" TextAlignment="Center" Text="Please enter the customer information"/>
+        <Label HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="126"/>
+        <TextBox x:Name="FirstNameBox" Height="23" Margin="95,66,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="LastNameBox" Height="23" Margin="95,114,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="EmailBox" Height="23" Margin="95,163,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="PhoneNumberBox" Height="23" Margin="95,210,10,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label Content="First Name:" HorizontalAlignment="Left" Margin="10,66,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.288,0.615"/>
+        <Label Content="Last Name:" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label Content="Phone:" HorizontalAlignment="Left" Margin="10,210,0,0" VerticalAlignment="Top" Width="80"/>
+        <Button x:Name="CustomerAddButton" Content="Add Customer" HorizontalAlignment="Left" Margin="10,302,0,0" VerticalAlignment="Top" Width="102" Height="44" Click="CustomerAddButton_Click"/>
+        <Button x:Name="CustomerCancelButton" Content="Cancel" Margin="182,302,10,0" VerticalAlignment="Top" Height="44" Click="CustomerCancelButton_Click"/>
+        <TextBlock x:Name="IdBox" HorizontalAlignment="Left" Margin="95,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="24" Width="189"><InlineUIContainer>
+        		<TextBox x:Name="IdTextBox" Height="24" TextWrapping="Wrap" Width="186"/>
+        	</InlineUIContainer></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="10,262,0,0" TextWrapping="Wrap" Text=" Cust Id:" VerticalAlignment="Top" RenderTransformOrigin="0.4,-0.625"/>
+
+    </Grid>
+</Window>

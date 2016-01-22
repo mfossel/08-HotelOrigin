@@ -1,0 +1,12 @@
+﻿<Window x:Class="_08_HotelOrigin.ReservationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ReservationWindow" Height="504.477" Width="820.896" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="45" Margin="259,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" Text="Reservation Management" TextAlignment="Center" FontSize="20" FontWeight="Bold" TextDecorations="Underline"/>
+        <DataGrid x:Name="ReservationGrid"  HorizontalAlignment="Left" Margin="0,101,0,0" VerticalAlignment="Top" Width="815" Height="375" IsReadOnly="True"  />
+        <Button Content="Add Reservation" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="130" Height="41" Click="Button_Click"/>
+        <Button Content="Delete Reservation" HorizontalAlignment="Left" Margin="158,55,0,0" VerticalAlignment="Top" Width="130" Height="41" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

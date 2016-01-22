@@ -1,0 +1,17 @@
+﻿<Window x:Class="_08_HotelOrigin.RoomInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RoomInput" Height="311" Width="259" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="24,25,0,0" TextWrapping="Wrap" Text="Please enter the room information: " VerticalAlignment="Top" Height="26" Width="243"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,75,0,0" TextWrapping="Wrap" Text="Room Number:" VerticalAlignment="Top" Width="102" RenderTransformOrigin="-0.216,1.188" Height="26"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Number of Bed:" VerticalAlignment="Top" Height="23" Width="86"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,156,0,0" TextWrapping="Wrap" Text="Has TV?" VerticalAlignment="Top" Height="31" Width="102"/>
+        <TextBox x:Name="RoomNumberBox" HorizontalAlignment="Left" Height="23" Margin="136,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <TextBox x:Name="BedBox" HorizontalAlignment="Left" Height="23" Margin="136,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
+        <Button x:Name="AddRoomButton" Content="Add Room" HorizontalAlignment="Left" Margin="10,207,0,0" VerticalAlignment="Top" Width="102" Height="37" Click="AddRoomButton_Click"/>
+        <Button x:Name="CancelRoomButton" Content="Cancel" HorizontalAlignment="Left" Margin="136,207,0,0" VerticalAlignment="Top" Width="102" Height="37" Click="CancelRoomButton_Click"/>
+        <CheckBox x:Name="HasTvCheck" Content="" HorizontalAlignment="Left" Margin="157,156,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
