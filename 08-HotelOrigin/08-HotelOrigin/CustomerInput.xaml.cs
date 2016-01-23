@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using HotelOrigin.Core.Repository;
+
 namespace _08_HotelOrigin
 {
     /// <summary>
@@ -36,6 +37,8 @@ namespace _08_HotelOrigin
                 LastNameBox.Clear();
                 EmailBox.Clear();
                 PhoneNumberBox.Clear();
+              
+
             }
             catch { }
 

@@ -3,8 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="RoomWindow" Height="504.477" Width="820.896" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid x:Name="AddRoomButton">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="27*"/>
+        </Grid.RowDefinitions>
         <TextBox HorizontalAlignment="Left" Height="45" Margin="259,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="289" Text="Room Management" TextAlignment="Center" FontSize="20" FontWeight="Bold" TextDecorations="Underline"/>
-        <DataGrid x:Name="RoomGrid" HorizontalAlignment="Right" Margin="0,97,0,0" VerticalAlignment="Top" Height="379" Width="815" IsReadOnly="True"/>
+        <DataGrid x:Name="RoomGrid" Margin="10,97,10,10" IsReadOnly="True" Grid.RowSpan="2"/>
         <Button Content="Delete Room" HorizontalAlignment="Left" Margin="161,55,0,0" VerticalAlignment="Top" Width="133" Height="40" Click="Button_Click"/>
         <Button Content="Add Room" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="133" Height="40" Click="Button_Click_1"/>
 

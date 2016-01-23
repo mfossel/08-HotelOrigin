@@ -27,12 +27,22 @@ namespace _08_HotelOrigin
             InitializeComponent();
 
             CustomerGrid.ItemsSource = CustomerRepository.GetAll();
-            
+            CustomerGrid.ScrollIntoView(CustomerRepository.customers[CustomerRepository.customers.Count - 1]);
+
         }
 
-     
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+
+       
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var newWindow4 = new CustomerInput();
+            newWindow4.Show();
+        }
+
+        private void DeleteButton_Click(object sender, RoutedEventArgs e)
         {
             if (CustomerGrid.SelectedIndex > -1)
             {
@@ -44,16 +54,5 @@ namespace _08_HotelOrigin
                 { }
             }
         }
-
-        private void CustomerGrid_AddingNewItem(object sender, AddingNewItemEventArgs e)
-        {
-       
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var newWindow4 = new CustomerInput();
-            newWindow4.Show();
-        }
-    }
+    }      
 }
